@@ -70,42 +70,42 @@ const resetForm = () => {
 }
 </script>
 
-<template>  
-    <page-container title="重置密码">
-      <template #default>
-        <el-form
-          :model="formData"
-          :rules="rules"
-          ref="form"
-          label-width="100px"
-          style="max-width: 460px"
-        >
-          <el-form-item label="原密码" prop="old_pwd">
-            <el-input
-              v-model="formData.old_pwd"
-              type="password"
-              show-password
-            ></el-input>
-          </el-form-item>
-          <el-form-item label="新密码" prop="new_pwd">
-            <el-input
-              v-model="formData.new_pwd"
-              type="password"
-              show-password
-            ></el-input>
-          </el-form-item>
-          <el-form-item label="确认新密码" prop="re_pwd">
-            <el-input
-              v-model="formData.re_pwd"
-              type="password"
-              show-password
-            ></el-input>
-          </el-form-item>
-          <el-form-item>
-            <el-button type="primary" @click="submitForm">修改密码</el-button>
-            <el-button @click="resetForm">重置</el-button>
-          </el-form-item>
-        </el-form>
-      </template>
-    </page-container>
-  </template>
+<template>
+  <page-container title="重置密码">
+    <template #default>
+      <el-form
+        :model="formData"
+        :rules="rules"
+        ref="form"
+        label-width="100px"
+        style="max-width: 460px"
+      >
+        <el-form-item label="原密码" prop="old_pwd">
+          <el-input
+            v-model="formData.old_pwd"
+            type="password"
+            show-password
+          ></el-input>
+        </el-form-item>
+        <el-form-item label="新密码" prop="new_pwd">
+          <el-input
+            v-model="formData.new_pwd"
+            type="password"
+            show-password
+          ></el-input>
+        </el-form-item>
+        <el-form-item label="确认新密码" prop="re_pwd">
+          <el-input
+            v-model="formData.re_pwd"
+            type="password"
+            show-password
+          ></el-input>
+        </el-form-item>
+        <el-form-item>
+          <el-button type="primary" @click="submitForm">修改密码</el-button>
+          <el-button @click="resetForm">重置</el-button>
+        </el-form-item>
+      </el-form>
+    </template>
+  </page-container>
+</template>
